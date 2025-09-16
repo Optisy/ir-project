@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">solid-color-wallpaper-studio</string>
+    <string name="title_activity_main">solid-color-wallpaper-studio</string>
+    <string name="package_name">com.example.solidcolorwallpaperstudio</string>
+    <string name="custom_url_scheme">com.example.solidcolorwallpaperstudio</string>
+</resources>
