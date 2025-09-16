@@ -3,7 +3,7 @@ workflows:
     name: Android Build
     instance_type: mac_mini_m1
     environment:
-      node: 20.x
+      node: 22.x
       java: 17
     scripts:
       - name: Install npm dependencies
