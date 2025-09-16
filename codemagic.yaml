@@ -26,6 +26,10 @@ workflows:
       - name: Set Android SDK location
         script: |
           echo "sdk.dir=$ANDROID_SDK_ROOT" > "$FCI_BUILD_DIR/android/local.properties"
+      - name: Grant execute permissions to gradlew
+        script: |
+          cd android
+          chmod +x gradlew
       - name: Build Android Release AAB
         script: |
           cd android
