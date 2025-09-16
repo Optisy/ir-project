@@ -3,9 +3,17 @@ workflows:
     name: Android Build
     instance_type: mac_mini_m1
     environment:
-      node: 22.x
       java: 17
     scripts:
+      - name: Install Node.js 22.1.0 via nvm
+        script: |
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          nvm install 22.1.0
+          nvm use 22.1.0
+          node --version
+          npm --version
       - name: Install npm dependencies
         script: |
           npm install
