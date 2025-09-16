@@ -3,7 +3,7 @@ workflows:
     name: Android Build
     instance_type: mac_mini_m1
     environment:
-      java: 17
+      java: 21
     scripts:
       - name: Install Node.js 22.1.0 via nvm
         script: |
